@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Drawable>
+ <Name>interior_template_shell</Name>
+ <BoundingSphereCenter x="0" y="0" z="0" />
+ <BoundingSphereRadius value="7.34847" />
+ <BoundingBoxMin x="-5" y="-5" z="-2" />
+ <BoundingBoxMax x="5" y="5" z="2" />
+ <LodDistHigh value="9998" />
+ <LodDistMed value="9998" />
+ <LodDistLow value="9998" />
+ <LodDistVlow value="9998" />
+ <FlagsHigh value="1" />
+ <FlagsMed value="0" />
+ <FlagsLow value="0" />
+ <FlagsVlow value="0" />
+ <Unknown9A value="46" />
+ <ShaderGroup>
+  <Unknown30 value="15" />
+  <TextureDictionary>
+   <Item>
+    <Name>clothDenim01_dn</Name>
+    <Unk32 value="128" />
+    <Usage>UNKNOWN</Usage>
+    <UsageFlags>X32, UNK24</UsageFlags>
+    <ExtraFlags value="0" />
+    <Width value="64" />
+    <Height value="64" />
+    <MipLevels value="7" />
+    <Format>D3DFMT_DXT1</Format>
+    <FileName>clothDenim01_dn.dds</FileName>
+   </Item>
+   <Item>
+    <Name>gz_V_MO_Wall01</Name>
+    <Unk32 value="128" />
+    <Usage>UNKNOWN</Usage>
+    <UsageFlags>X32, X64, X128, UNK24</UsageFlags>
+    <ExtraFlags value="0" />
+    <Width value="256" />
+    <Height value="256" />
+    <MipLevels value="7" />
+    <Format>D3DFMT_DXT1</Format>
+    <FileName>gz_V_MO_Wall01.dds</FileName>
+   </Item>
+   <Item>
+    <Name>gz_V_ML_Wall01_N</Name>
+    <Unk32 value="128" />
+    <Usage>UNKNOWN</Usage>
+    <UsageFlags>X32, X64, X128, UNK24</UsageFlags>
+    <ExtraFlags value="0" />
+    <Width value="256" />
+    <Height value="256" />
+    <MipLevels value="7" />
+    <Format>D3DFMT_DXT1</Format>
+    <FileName>gz_V_ML_Wall01_N.dds</FileName>
+   </Item>
+   <Item>
+    <Name>gz_V_FA_Wall01</Name>
+    <Unk32 value="128" />
+    <Usage>UNKNOWN</Usage>
+    <UsageFlags>X32, X64, X128, UNK24</UsageFlags>
+    <ExtraFlags value="0" />
+    <Width value="256" />
+    <Height value="256" />
+    <MipLevels value="7" />
+    <Format>D3DFMT_DXT1</Format>
+    <FileName>gz_V_FA_Wall01.dds</FileName>
+   </Item>
+   <Item>
+    <Name>gz_V_MO_Carpet02</Name>
+    <Unk32 value="128" />
+    <Usage>UNKNOWN</Usage>
+    <UsageFlags>X32, X64, X128, UNK24</UsageFlags>
+    <ExtraFlags value="0" />
+    <Width value="256" />
+    <Height value="256" />
+    <MipLevels value="7" />
+    <Format>D3DFMT_DXT1</Format>
+    <FileName>gz_V_MO_Carpet02.dds</FileName>
+   </Item>
+   <Item>
+    <Name>OS_V_FA_Lino01</Name>
+    <Unk32 value="128" />
+    <Usage>UNKNOWN</Usage>
+    <UsageFlags>X32, X64, X128, UNK24</UsageFlags>
+    <ExtraFlags value="0" />
+    <Width value="256" />
+    <Height value="256" />
+    <MipLevels value="7" />
+    <Format>D3DFMT_DXT1</Format>
+    <FileName>OS_V_FA_Lino01.dds</FileName>
+   </Item>
+  </TextureDictionary>
+  <Shaders>
+   <Item>
+    <Name>default</Name>
+    <FileName>default.sps</FileName>
+    <RenderBucket value="0" />
+    <Parameters>
+     <Item name="DiffuseSampler" type="Texture">
+      <Name>OS_V_FA_Lino01</Name>
+     </Item>
+     <Item name="matMaterialColorScale" type="Vector" x="1" y="0" z="0" w="1" />
+     <Item name="HardAlphaBlend" type="Vector" x="1" y="0" z="0" w="0" />
+     <Item name="useTessellation" type="Vector" x="0" y="0" z="0" w="0" />
+     <Item name="wetnessMultiplier" type="Vector" x="1" y="0" z="0" w="0" />
+     <Item name="globalAnimUV1" type="Vector" x="0" y="1" z="0" w="0" />
+     <Item name="globalAnimUV0" type="Vector" x="1" y="0" z="0" w="0" />
+    </Parameters>
+   </Item>
+   <Item>
+    <Name>normal_spec</Name>
+    <FileName>normal_spec.sps</FileName>
+    <RenderBucket value="0" />
+    <Parameters>
+     <Item name="DiffuseSampler" type="Texture">
+      <Name>gz_V_MO_Wall01</Name>
+     </Item>
+     <Item name="BumpSampler" type="Texture">
+      <Name>gz_V_ML_Wall01_N</Name>
+     </Item>
+     <Item name="SpecSampler" type="Texture">
+      <Name>gz_V_FA_Wall01</Name>
+     </Item>
+     <Item name="HardAlphaBlend" type="Vector" x="1" y="0" z="0" w="0" />
+     <Item name="useTessellation" type="Vector" x="0" y="0" z="0" w="0" />
+     <Item name="wetnessMultiplier" type="Vector" x="1" y="0" z="0" w="0" />
+     <Item name="bumpiness" type="Vector" x="1" y="0" z="0" w="0" />
+     <Item name="specMapIntMask" type="Vector" x="1" y="0" z="0" w="0" />
+     <Item name="specularIntensityMult" type="Vector" x="0.6" y="0" z="0" w="0" />
+     <Item name="specularFalloffMult" type="Vector" x="25" y="0" z="0" w="0" />
+     <Item name="specularFresnel" type="Vector" x="0.9" y="0" z="0" w="0" />
+    </Parameters>
+   </Item>
+   <Item>
+    <Name>default_detail</Name>
+    <FileName>default_detail.sps</FileName>
+    <RenderBucket value="0" />
+    <Parameters>
+     <Item name="DiffuseSampler" type="Texture">
+      <Name>gz_V_MO_Carpet02</Name>
+     </Item>
+     <Item name="DetailSampler" type="Texture">
+      <Name>clothDenim01_dn</Name>
+     </Item>
+     <Item name="detailSettings" type="Vector" x="0.5" y="0.5" z="6" w="6" />
+     <Item name="matMaterialColorScale" type="Vector" x="1" y="0" z="0" w="1" />
+     <Item name="useTessellation" type="Vector" x="0" y="0" z="0" w="0" />
+     <Item name="wetnessMultiplier" type="Vector" x="1" y="0" z="0" w="0" />
+    </Parameters>
+   </Item>
+  </Shaders>
+ </ShaderGroup>
+ <DrawableModelsHigh>
+  <Item>
+   <RenderMask value="255" />
+   <Flags value="0" />
+   <HasSkin value="0" />
+   <BoneIndex value="0" />
+   <Unknown1 value="0" />
+   <Geometries>
+    <Item>
+     <ShaderIndex value="0" />
+     <BoundingBoxMin x="-5" y="-5" z="2" w="0" />
+     <BoundingBoxMax x="5" y="5" z="2" w="0" />
+     <VertexBuffer>
+      <Flags value="0" />
+      <Layout type="GTAV1">
+       <Position />
+       <Normal />
+       <Colour0 />
+       <TexCoord0 />
+      </Layout>
+      <Data2>
+       -5 -5 2   0.5773503 0.5773503 -0.5773502   0 170 0 255   3.00000048 1.99999952
+       5 -5 2   -0.5773503 0.5773503 -0.5773503   0 170 0 255   -1.99999952 2.00000048
+       -5 5 2   0.5773503 -0.5773503 -0.5773503   0 170 0 255   2.99999952 -3.00000048
+       5 5 2   -0.5773503 -0.5773503 -0.5773502   0 170 0 255   -2.00000048 -2.99999952
+      </Data2>
+     </VertexBuffer>
+     <IndexBuffer>
+      <Data>0 2 3 3 1 0</Data>
+     </IndexBuffer>
+    </Item>
+    <Item>
+     <ShaderIndex value="1" />
+     <BoundingBoxMin x="-5" y="-5" z="-2" w="0" />
+     <BoundingBoxMax x="5" y="5" z="2" w="0" />
+     <VertexBuffer>
+      <Flags value="0" />
+      <Layout type="GTAV1">
+       <Position />
+       <Normal />
+       <Colour0 />
+       <TexCoord0 />
+       <Tangent />
+      </Layout>
+      <Data2>
+       -5 -5 -2   0.5773503 0.5773503 0.5773502   0 170 0 255   -1.99999952 0.5   -0.4082484 0.8164966 -0.4082483 1
+       -5 -5 -2   0.5773503 0.5773503 0.5773502   0 170 0 255   3.00000048 0.5   -0.8164966 0.4082484 0.4082483 1
+       5 -5 -2   -0.5773503 0.5773503 0.5773503   0 170 0 255   -1.99999952 0.5   -0.8164965 -0.4082484 -0.4082484 1
+       5 -5 -2   -0.5773503 0.5773503 0.5773503   0 170 0 255   3.00000048 0.5   -0.4082484 -0.8164965 0.4082484 1
+       -5 5 -2   0.5773503 -0.5773503 0.5773503   0 170 0 255   -1.99999952 0.5   0.8164965 0.4082484 -0.4082484 1
+       -5 5 -2   0.5773503 -0.5773503 0.5773503   0 170 0 255   3.00000048 0.5   0.4082484 0.8164965 0.4082484 1
+       5 5 -2   -0.5773503 -0.5773503 0.5773502   0 170 0 255   -1.99999952 0.5   0.4082484 -0.8164966 -0.4082483 1
+       5 5 -2   -0.5773503 -0.5773503 0.5773502   0 170 0 255   3.00000048 0.5   0.8164966 -0.4082484 0.4082483 1
+       -5 -5 2   0.5773503 0.5773503 -0.5773502   0 170 0 255   3.00000048 -1.5   -0.8164966 0.4082484 -0.4082483 1
+       -5 -5 2   0.5773503 0.5773503 -0.5773502   0 170 0 255   -1.99999952 -1.5   -0.4082484 0.8164966 0.4082483 1
+       5 -5 2   -0.5773503 0.5773503 -0.5773503   0 170 0 255   -1.99999952 -1.5   -0.8164965 -0.4082484 0.4082484 1
+       5 -5 2   -0.5773503 0.5773503 -0.5773503   0 170 0 255   3.00000048 -1.5   -0.4082484 -0.8164965 -0.4082484 1
+       -5 5 2   0.5773503 -0.5773503 -0.5773503   0 170 0 255   -1.99999952 -1.5   0.8164965 0.4082484 0.4082484 1
+       -5 5 2   0.5773503 -0.5773503 -0.5773503   0 170 0 255   3.00000048 -1.5   0.4082484 0.8164965 -0.4082484 1
+       5 5 2   -0.5773503 -0.5773503 -0.5773502   0 170 0 255   -1.99999952 -1.5   0.4082484 -0.8164966 0.4082483 1
+       5 5 2   -0.5773503 -0.5773503 -0.5773502   0 170 0 255   3.00000048 -1.5   0.8164966 -0.4082484 -0.4082483 1
+      </Data2>
+     </VertexBuffer>
+     <IndexBuffer>
+      <Data>1 8 10 10 2 1 3 11 14 14 6 3 7 15 12 12 4 7 5 13 9 9 0 5</Data>
+     </IndexBuffer>
+    </Item>
+    <Item>
+     <ShaderIndex value="2" />
+     <BoundingBoxMin x="-5" y="-5" z="-2" w="0" />
+     <BoundingBoxMax x="5" y="5" z="-2" w="0" />
+     <VertexBuffer>
+      <Flags value="0" />
+      <Layout type="GTAV1">
+       <Position />
+       <Normal />
+       <Colour0 />
+       <TexCoord0 />
+      </Layout>
+      <Data2>
+       -5 -5 -2   0.5773503 0.5773503 0.5773502   0 170 0 255   -2.00000048 1.99999952
+       5 -5 -2   -0.5773503 0.5773503 0.5773503   0 170 0 255   2.99999952 2.00000048
+       -5 5 -2   0.5773503 -0.5773503 0.5773503   0 170 0 255   -1.99999952 -3.00000048
+       5 5 -2   -0.5773503 -0.5773503 0.5773502   0 170 0 255   3.00000048 -2.99999952
+      </Data2>
+     </VertexBuffer>
+     <IndexBuffer>
+      <Data>0 1 3 3 2 0</Data>
+     </IndexBuffer>
+    </Item>
+   </Geometries>
+  </Item>
+ </DrawableModelsHigh>
+ <Lights />
+</Drawable>
